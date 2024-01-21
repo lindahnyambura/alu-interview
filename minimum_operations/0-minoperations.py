@@ -2,22 +2,19 @@
 '''Minimum Operations'''
 
 
-def min_operations(n, result=0):
-    '''
-    Returns the minimum number of operations needed to result in exactly n 'H' characters in the file.
+def minOperations(n, result=0):
+    ''' Returns the minimum number of operations to reach n characters
     '''
     if n <= 1:
         return (0)
     elif n <= 3:
         return (n)
-
-    common_factor = get_hcf(n)
-    return min_operations(common_factor) + (n // common_factor)
+    hcf = get_hcf(n)
+    return minOperations(hcf) + (n // hcf)
 
 
 def get_hcf(num: int) -> int:
-    '''
-    Returns the highest common factor (HCF) of a given number.
+    '''Returns the highest common factor of num
     '''
     for i in range(num // 2, 0, -1):
         if num % i == 0:
