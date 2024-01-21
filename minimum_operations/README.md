@@ -13,12 +13,11 @@ This Python script calculates the minimum number of operations needed to achieve
 ### Example
 ```bash
 python main_0.py
-
+```
 ## Files
-
-0-minoperations.py:
+**0-minoperations.py**:
 Defines the min_operations function.
 Implements the get_hcf function to calculate the highest common factor.
 
-main_0.py:
+**main_0.py**:
 Tests the min_operations function with specific values of n.
