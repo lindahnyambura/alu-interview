@@ -23,4 +23,3 @@ def get_hcf(num: int) -> int:
         if num % i == 0:
             return i
 
-
