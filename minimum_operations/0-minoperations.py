@@ -22,4 +22,3 @@ def get_hcf(num: int) -> int:
     for i in range(num // 2, 0, -1):
         if num % i == 0:
             return i
-
